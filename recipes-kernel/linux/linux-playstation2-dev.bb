@@ -13,9 +13,11 @@ SRC_URI = "git://github.com/frno7/linux.git;protocol=https;branch=ps2-main"
 SRC_URI += "file://defconfig"
 LINUX_VERSION ?= "5.4"
 LINUX_VERSION_EXTENSION:append = "-custom"
-
 SRCREV = "de37b463522983681ec7fd3530119f36ec63789f"
+#PV = "${LINUX_VERSION}+git${SRCPV}"
 
-PV = "${LINUX_VERSION}+git${SRCPV}"
+INITRAMFS_IMAGE = "playstation2-initramfs"
+
+#KERNEL_MODULE_AUTOLOAD += "ps2fb ohci-ps2 sd_mod ums-usbat usbhid hid-generic"
 
 COMPATIBLE_MACHINE = "playstation2"
