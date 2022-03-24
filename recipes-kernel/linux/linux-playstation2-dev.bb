@@ -16,8 +16,15 @@ LINUX_VERSION_EXTENSION:append = "-custom"
 SRCREV = "de37b463522983681ec7fd3530119f36ec63789f"
 #PV = "${LINUX_VERSION}+git${SRCPV}"
 
-INITRAMFS_IMAGE = "playstation2-initramfs"
+#INITRAMFS_IMAGE = "core-image-minimal-initramfs"
+INITRAMFS_IMAGE = "initramfs-playstation2"
 
 #KERNEL_MODULE_AUTOLOAD += "ps2fb ohci-ps2 sd_mod ums-usbat usbhid hid-generic"
 
 COMPATIBLE_MACHINE = "playstation2"
+
+#TODO : enable in-tree defconfig
+#KBUILD_DEFCONFIG_playstation2 = "ps2_defconfig"
+#KMACHINE_playstation2 = "ps2"
+
+KERNEL_EXTRA_ARGS += "LOADADDR=0x80016040"

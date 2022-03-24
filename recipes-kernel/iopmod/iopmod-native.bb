@@ -12,21 +12,15 @@ SRCREV = "4f0dc8cbe7ef8c90384eb28a9423f0207ec14c18"
 
 S = "${WORKDIR}/git"
 
-DEPENDS = "iopmod-native"
-
-#EXTRA_OEMAKE = ""
-export CROSS_COMPILE = "${TARGET_PREFIX}"
-
-FILES:${PN} += "${base_libdir}/firmware/ps2/"
+inherit native
 
 do_compile() {
-        #oe_runmake module
-        :
+        oe_runmake tool
 }
 
 do_install() {
-        install -d ${D}${base_libdir}/firmware/ps2/
-        install -m 0644 module/*.irx ${D}${base_libdir}/firmware/ps2/ || true
+        install -d ${D}${bindir}/
+        install -m 755 tool/iopmod-symc ${D}${bindir}/
+        install -m 755 tool/iopmod-info ${D}${bindir}/
+        install -m 755 tool/iopmod-link ${D}${bindir}/
 }
-
-COMPATIBLE_MACHINE = "playstation2"
