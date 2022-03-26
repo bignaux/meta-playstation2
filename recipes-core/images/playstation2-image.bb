@@ -2,8 +2,6 @@ require recipes-core/images/core-image-minimal.bb
 PR = "r1"
 DESCRIPTION = "Minimalistic image for PS2"
 
-KERNEL_EXTRA_ARGS += "LOADADDR=0x80016040"
-
 IMAGE_FEATURES += "ssh-server-dropbear"
 
 #IMAGE_INSTALL += "${PTESTS_FAST}"
