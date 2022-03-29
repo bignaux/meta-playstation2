@@ -1,6 +1,6 @@
 SUMMARY = "Firmware files for use with Linux kernel"
 HOMEPAGE = "https://github.com/frno7/iopmod.git"
-DESCRIPTION = "PlayStation 2 input/output processor (IOP) modules."
+DESCRIPTION = "PlayStation 2 input/output processor (IOP) native tools."
 SECTION = "kernel"
 
 LICENSE = "GPL-2.0-only"
