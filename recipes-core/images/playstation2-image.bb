@@ -3,6 +3,7 @@ PR = "r1"
 DESCRIPTION = "Minimalistic image for PS2"
 
 IMAGE_FEATURES += "ssh-server-dropbear"
+#IMAGE_CLASSES += "qemuboot"
 
 #IMAGE_INSTALL += "${PTESTS_FAST}"
 

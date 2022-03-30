@@ -11,8 +11,8 @@ PACKAGE_INSTALL = " \
                       ${VIRTUAL-RUNTIME_base-utils} iopmod-bin udev \
                       base-passwd ${ROOTFS_BOOTSTRAP_INSTALL}"
 
-# INITRAMFS_FSTYPES = "cpio.xz"
-INITRAMFS_FSTYPES = "cpio.gz"
+INITRAMFS_FSTYPES = "cpio.xz"
+#INITRAMFS_FSTYPES = "cpio.gz"
 
 # Do not pollute the initrd image with rootfs features
 IMAGE_FEATURES = ""

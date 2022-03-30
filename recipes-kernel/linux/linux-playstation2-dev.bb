@@ -14,8 +14,6 @@ LINUX_VERSION ?= "5.4"
 LINUX_VERSION_EXTENSION:append = "-custom"
 SRCREV = "de37b463522983681ec7fd3530119f36ec63789f"
 
-INITRAMFS_IMAGE = "initramfs-playstation2"
-
 KERNEL_MODULE_AUTOLOAD += "ps2fb ohci-ps2 sd_mod ums-usbat usbhid hid-generic"
 
 COMPATIBLE_MACHINE = "playstation2"
