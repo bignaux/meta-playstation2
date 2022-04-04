@@ -21,4 +21,4 @@ BASE_LIB:tune-mipsr5900el = "lib32"
 MIPSPKGSFX_VARIANT:tune-mipsr5900el = "mipsr5900el"
 PACKAGE_EXTRA_ARCHS:tune-mipsr5900el = "${PACKAGE_EXTRA_ARCHS:tune-mips32el-nf} mipsr5900el-nf"
 
-QEMU_EXTRAOPTIONS_tune-mipsr5900el = " -cpu mips32el-nf"
+QEMU_EXTRAOPTIONS_mipsr5900el = " -cpu mips32el-nf"

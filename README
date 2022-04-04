@@ -5,23 +5,15 @@ Please see the corresponding sections below for details.
 Dependencies
 ============
 
-  URI: <first dependency>
-  branch: <branch name>
-
-  URI: <second dependency>
-  branch: <branch name>
-
-  .
-  .
-  .
+  URI: git://git.yoctoproject.org/poky
+  branch: master
 
 Patches
 =======
 
-Please submit any patches against the meta-playstation2 layer to the xxxx mailing list (xxxx@zzzz.org)
-and cc: the maintainer:
+To contribute to this layer, please fork and submit pull requests to the github repository, or open issues for any bugs you find, or feature requests you have.
 
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
+Maintainer: Ronan Bignaux <ronan@aimao.org>
 
 Table of Contents
 =================
